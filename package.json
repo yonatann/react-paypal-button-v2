@@ -107,7 +107,7 @@
         "test": "jest --watchAll",
         "test:once": "jest",
         "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-        "prepublish": "npm run build"
+        "install": "npm run build"
     },
     "license": "MIT"
 }
