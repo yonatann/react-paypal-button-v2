@@ -42,7 +42,7 @@
     },
     "main": "./lib/index.js",
     "types": "dist/index.d.ts",
-    "files": ["src/**/*", "./*"],
+    "files": ["src/**/*"],
     "dependencies": {
         "prop-types": "^15.7.2",
         "rimraf": "^3.0.0"
