@@ -42,14 +42,16 @@
     },
     "main": "./lib/index.js",
     "types": "dist/index.d.ts",
-    "files": ["src/**/*", "tsconfig.json", "webpack.config.js"],
+    "files": ["src/**/*", "dist/**/*", "lib/**/*"],
+    "dependencies": {
+        "prop-types": "^15.7.2",
+        "rimraf": "^3.0.0"
+    },
     "peerDependencies": {
         "react": "^0.14.6 || 15.x.x || 16.x.x",
         "react-dom": "^0.14.6 || 15.x.x || 16.x.x"
     },
-    "dependencies": {
-        "prop-types": "^15.7.2",
-        "rimraf": "^3.0.0",
+    "devDependencies": {
         "@babel/cli": "^7.5.5",
         "@babel/core": "^7.5.5",
         "@babel/plugin-proposal-class-properties": "^7.5.5",
@@ -104,8 +106,7 @@
         "lint": "./node_modules/.bin/eslint src/ example/",
         "test": "jest --watchAll",
         "test:once": "jest",
-        "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-        "install": "npm run build"
+        "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls"
     },
     "license": "MIT"
 }
