@@ -62,10 +62,10 @@
         "@types/enzyme": "^3.10.3",
         "@types/enzyme-adapter-react-16": "^1.0.5",
         "@types/jest": "^23.3.14",
-        "@types/node": "^11.9.4",
+        "@types/node": "^11.13.23",
         "@types/react": "^16.9.2",
         "@types/react-dom": "^16.8.5",
-        "@types/webpack-env": "^1.14.0",
+        "@types/webpack-env": "^1.15.2",
         "@typescript-eslint/eslint-plugin": "1.4.0",
         "@typescript-eslint/parser": "1.4.0",
         "babel-core": "^6.26.3",
@@ -105,7 +105,8 @@
         "lint": "./node_modules/.bin/eslint src/ example/",
         "test": "jest --watchAll",
         "test:once": "jest",
-        "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+        "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+        "install": "npm run build"
     },
     "license": "MIT"
 }
